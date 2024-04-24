@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-briefcase"></i> Job Board</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="job-listings">
+                <div class="job-listing">
+                    <h3>Web Developer</h3>
+                    <p><strong>Location:</strong> Remote</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="/apply" class="btn">Apply Now</a>
+                </div>
+                <div class="job-listing">
+                    <h3>Marketing Specialist</h3>
+                    <p><strong>Location:</strong> New York, NY</p>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <a href="/apply" class="btn">Apply Now</a>
+                </div>
+                <div class="job-listing">
+                    <h3>Data Analyst</h3>
+                    <p><strong>Location:</strong> San Francisco, CA</p>
+                    <p>Nulla facilisi. Sed eget bibendum leo, ac molestie velit.</p>
+                    <a href="/apply" class="btn">Apply Now</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Job Board. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+</html>
